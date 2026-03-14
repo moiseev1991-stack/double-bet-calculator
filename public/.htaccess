@@ -1,12 +1,11 @@
-Options -MultiViews
+Options -MultiViews -Indexes
 RewriteEngine On
 
 # 301 redirect: remove trailing slash (except root /)
 RewriteRule ^(.+)/$ https://%{HTTP_HOST}/$1 [R=301,NE,L]
 
-# Serve .html files without extension
+# Serve .html files without extension (priority over same-name directory)
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^(.*)$ $1.html [L]
 
