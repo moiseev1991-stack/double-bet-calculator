@@ -16,13 +16,13 @@ export const metadata: Metadata = {
     'horse racing double bet',
   ],
   alternates: {
-    canonical: 'https://betcalc.uk',
+    canonical: 'https://double-bet-calculator.uk',
   },
   openGraph: {
     title: 'Double Bet Calculator | Free UK Betting Calculator',
     description:
       'Free online double bet calculator. Enter your odds and stake to calculate returns instantly.',
-    url: 'https://betcalc.uk',
+    url: 'https://double-bet-calculator.uk',
     locale: 'en_GB',
     type: 'website',
   },

@@ -1,6 +1,6 @@
 import { BetTypeConfig } from '@/lib/betTypes';
 
-const BASE_URL = 'https://betcalc.uk';
+const BASE_URL = 'https://double-bet-calculator.uk';
 
 interface JsonLdProps {
   betType: BetTypeConfig;

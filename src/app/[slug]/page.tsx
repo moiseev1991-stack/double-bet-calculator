@@ -4,7 +4,7 @@ import Calculator from '@/components/Calculator';
 import JsonLd from '@/components/JsonLd';
 import { BET_TYPE_MAP, BET_TYPES } from '@/lib/betTypes';
 
-const BASE_URL = 'https://betcalc.uk';
+const BASE_URL = 'https://double-bet-calculator.uk';
 
 interface Props {
   params: Promise<{ slug: string }>;
