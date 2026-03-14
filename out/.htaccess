@@ -1,15 +1,7 @@
-Options -MultiViews -Indexes
+Options -Indexes
+
+# Fallback to 404 for unknown paths
 RewriteEngine On
-
-# 301 redirect: remove trailing slash (except root /)
-RewriteRule ^(.+)/$ https://%{HTTP_HOST}/$1 [R=301,NE,L]
-
-# Serve .html files without extension (priority over same-name directory)
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME}.html -f
-RewriteRule ^(.*)$ $1.html [L]
-
-# Fallback to 404
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^ /404.html [L]
